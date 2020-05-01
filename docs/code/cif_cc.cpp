@@ -7,7 +7,7 @@ int main() {
   cif::Document doc = cif::read_file("1mru.cif");
   for (cif::Block& block : doc.blocks)
     for (auto cc : block.find("_chem_comp.", {"id", "formula_weight"}))
-      std::cout << cc[0] << " weights " << cc[1] << std::endl;
+      std::cout << cc[0] << " weighs " << cc[1] << std::endl;
 }
 
 // the next example is in docs from line 15 to 27
